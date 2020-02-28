@@ -1,0 +1,9 @@
+name: CD prod
+
+on:
+  push:
+    paths-ignore::
+      - 'README.md'
+      - '.github/ISSUE_TEMPLATE/*'
+    branches:
+      - master
