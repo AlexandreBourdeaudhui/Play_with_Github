@@ -7,3 +7,10 @@ on:
       - '.github/ISSUE_TEMPLATE/*'
     branches:
       - master
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Init slack notif
