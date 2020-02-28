@@ -2,17 +2,19 @@ name: CD prod
 
 on:
   push:
-    paths-ignore::
+    paths-ignore:
       - 'README.md'
       - '.github/ISSUE_TEMPLATE/*'
     branches:
       - master
 
 jobs:
-  deploy:
-    runs-on: self-hosted
+  build:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Init slack notif
-        run: |-
-          curl -X POST -H 'Content-type: application/json' --data '{"text":":rocket: Start deploy on prod :pray:"}' https://oclock.io
+      - name: Setup repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
