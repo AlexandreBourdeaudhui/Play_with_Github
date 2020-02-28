@@ -11,6 +11,3 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
-
-    steps:
-      - name: Init slack notif
