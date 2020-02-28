@@ -11,3 +11,8 @@ on:
 jobs:
   deploy:
     runs-on: self-hosted
+
+    steps:
+      - name: Init slack notif
+        run: |-
+          curl -X POST -H 'Content-type: application/json' --data '{"text":":rocket: Start deploy on prod :pray:"}' https://oclock.io
