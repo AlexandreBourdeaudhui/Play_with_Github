@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "eslint --fix './**/*.js'",
     "pretty": "prettier --write './**/*.js'",
+    "prettier:check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,10 @@
     "url": "https://github.com/AlexandreBourdeaudhui/play_with_github/issues"
   },
   "homepage": "https://github.com/AlexandreBourdeaudhui/play_with_github#readme",
+  "dependencies": {
+    "@oclock/logger-node": "git+ssh://git@github.com:O-clock-Dev/LoggerBack#1.1.1",
+    "@oclock/theme": "git+ssh://git@github.com:O-clock-Dev/theme-oclock.git#1.0.4"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.29.0",
