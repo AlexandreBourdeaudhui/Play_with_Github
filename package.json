@@ -19,6 +19,10 @@
     "url": "https://github.com/AlexandreBourdeaudhui/play_with_github/issues"
   },
   "homepage": "https://github.com/AlexandreBourdeaudhui/play_with_github#readme",
+  "dependencies": {
+    "@oclock/logger-node": "git+https://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:x-oauth-basic@github.com:O-clock-Dev/LoggerBack#1.1.1",
+    "@oclock/theme": "git+https://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:x-oauth-basic@github.com:O-clock-Dev/theme-oclock.git#1.0.4"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.29.0",
