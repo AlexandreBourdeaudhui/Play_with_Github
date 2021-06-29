@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "eslint --fix './**/*.js'",
     "pretty": "prettier --write './**/*.js'",
+    "prettier:check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
