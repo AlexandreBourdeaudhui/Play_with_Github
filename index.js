@@ -1,3 +1,1 @@
-export default () => {
-  const test = 'xxx';
-};
+export default () => {};
