@@ -1,0 +1,21 @@
+name: publish_on_npm
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🔍
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies 📚
+        run: npm install --ignore-script
+
+      - name: Authenticate with registry 🔐
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+
+      - name: Publish package on NPM 📦
+        run: npm run publish
