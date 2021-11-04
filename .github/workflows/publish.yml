@@ -18,4 +18,4 @@ jobs:
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: Publish package on NPM 📦
-        run: npm run publish
+        run: npm publish
