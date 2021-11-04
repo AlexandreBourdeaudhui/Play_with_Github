@@ -1,6 +1,6 @@
 {
   "name": "play_with_github",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Play w/ GitHub",
   "main": "index.js",
   "scripts": {
