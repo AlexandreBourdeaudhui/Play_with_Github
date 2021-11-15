@@ -1,6 +1,6 @@
 {
-  "name": "play_with_github",
-  "version": "1.0.3",
+  "name": "@oclock/play_with_github",
+  "version": "1.0.4",
   "description": "Play w/ GitHub",
   "main": "index.js",
   "scripts": {
