@@ -1,1 +1,1 @@
-Play w/ GitHub
+Play with GitHub
